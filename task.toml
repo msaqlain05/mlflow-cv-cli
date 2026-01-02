@@ -1,0 +1,19 @@
+[task]
+name = "mlflow-cv-cli"
+version = "1.0.0"
+description = "MLflow CLI for resumable 5-fold cross-validation"
+difficulty = "medium"
+category = "machine-learning"
+
+[task.requirements]
+python_version = "3.13"
+docker_required = true
+
+[task.scoring]
+max_score = 100
+oracle_pass_rate = 1.0
+target_pass_rate = 0.79
+
+[task.timeouts]
+execution_timeout = 600  # 10 minutes
+test_timeout = 300       # 5 minutes
